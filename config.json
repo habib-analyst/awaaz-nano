@@ -1,0 +1,29 @@
+{
+ "architecture": {
+  "n_mels": 80,
+  "d_model": 192,
+  "n_layers": 4,
+  "n_heads": 4,
+  "d_ff": 768,
+  "dropout": 0.1,
+  "front_end": "2x Conv2d(3x3, stride 2) + BatchNorm + ReLU; time downsample x4",
+  "features": "log-mel 80 bins, win 400, hop 200 (12.5 ms), per-utterance CMVN"
+ },
+ "vocab_size": 73,
+ "parameters": 1926313,
+ "seed": 20261029,
+ "training": {
+  "data": "FLEURS ur_pk train split, 2108 of 2109 utterances (1 CTC-infeasible excluded)",
+  "epochs_scheduled": 36,
+  "epochs_completed": 18,
+  "selected_epoch": 10,
+  "dev_cer_at_selection": 0.5365,
+  "dev_wer_at_selection": 1.0165,
+  "optimizer": "AdamW lr 1.5e-3, wd 0.01, 1-epoch linear warmup, cosine to 5%",
+  "batching": "length-grouped, padded mel-frame budget 32000",
+  "loss": "CTC (blank 0)",
+  "augmentation": "none",
+  "sum_epoch_seconds": 5798.5,
+  "note": "Training stopped after epoch 17: dev CER had not improved since epoch 10 (plateau 0.5365-0.5672) while train loss kept falling. The run was interrupted once by environment process loss (after epoch 16) and resumed from the per-epoch checkpoint with no work lost. Earlier discarded attempts (a detached-launch death, an OOM kill at a larger batch budget, and a run with a learning-rate-schedule bug) are documented in REPORT.md."
+ }
+}

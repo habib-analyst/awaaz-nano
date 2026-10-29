@@ -1,0 +1,26 @@
+Awaaz-Nano training log — FLEURS ur_pk train (2,108 utts), CTC, AdamW lr 1.5e-3
+cosine schedule over a planned 36 epochs, seed 20261029, CPU-only (2 cores).
+One JSON record per completed epoch, written by scripts/train.py.
+The run was interrupted once by environment process loss, after epoch 16,
+and resumed from the per-epoch checkpoint with no work lost; epoch 17
+took 954 s under heavy machine contention. Training was stopped after
+epoch 17 on a dev-CER plateau; the shipped checkpoint is epoch 10 (best dev).
+
+{"epoch": 0, "train_ctc_loss_per_utt": 3.6049, "dev_cer": 0.7854, "dev_wer": 0.9965, "improved": true, "seconds": 357.7, "lr": 0.0015}
+{"epoch": 1, "train_ctc_loss_per_utt": 3.0155, "dev_cer": 0.7297, "dev_wer": 0.9987, "improved": true, "seconds": 347.2, "lr": 0.0014972141677628173}
+{"epoch": 2, "train_ctc_loss_per_utt": 2.5781, "dev_cer": 0.6208, "dev_wer": 1.0346, "improved": true, "seconds": 385.2, "lr": 0.0014888784559249637}
+{"epoch": 3, "train_ctc_loss_per_utt": 2.1434, "dev_cer": 0.5794, "dev_wer": 1.0146, "improved": true, "seconds": 323.7, "lr": 0.0014748143748889114}
+{"epoch": 4, "train_ctc_loss_per_utt": 1.9099, "dev_cer": 0.5629, "dev_wer": 1.0579, "improved": true, "seconds": 263.6, "lr": 0.0014552164426405616}
+{"epoch": 5, "train_ctc_loss_per_utt": 1.7656, "dev_cer": 0.5514, "dev_wer": 1.0627, "improved": true, "seconds": 257.5, "lr": 0.0014302424502069804}
+{"epoch": 6, "train_ctc_loss_per_utt": 1.6694, "dev_cer": 0.5477, "dev_wer": 1.0779, "improved": true, "seconds": 258.7, "lr": 0.0014005662729212709}
+{"epoch": 7, "train_ctc_loss_per_utt": 1.59, "dev_cer": 0.5486, "dev_wer": 1.0456, "improved": false, "seconds": 257.8, "lr": 0.001365554611755699}
+{"epoch": 8, "train_ctc_loss_per_utt": 1.5354, "dev_cer": 0.5425, "dev_wer": 1.0469, "improved": true, "seconds": 262.2, "lr": 0.0013264954323440464}
+{"epoch": 9, "train_ctc_loss_per_utt": 1.457, "dev_cer": 0.5404, "dev_wer": 1.0361, "improved": true, "seconds": 261.8, "lr": 0.0012832213733503075}
+{"epoch": 10, "train_ctc_loss_per_utt": 1.4104, "dev_cer": 0.5365, "dev_wer": 1.0165, "improved": true, "seconds": 264.3, "lr": 0.0012353503318575222}
+{"epoch": 11, "train_ctc_loss_per_utt": 1.3574, "dev_cer": 0.5474, "dev_wer": 1.0237, "improved": false, "seconds": 263.5, "lr": 0.0011846433284583581}
+{"epoch": 12, "train_ctc_loss_per_utt": 1.2996, "dev_cer": 0.5419, "dev_wer": 1.0536, "improved": false, "seconds": 272.4, "lr": 0.0011300182596310963}
+{"epoch": 13, "train_ctc_loss_per_utt": 1.239, "dev_cer": 0.5427, "dev_wer": 1.0449, "improved": false, "seconds": 262.0, "lr": 0.0010734846047620403}
+{"epoch": 14, "train_ctc_loss_per_utt": 1.1977, "dev_cer": 0.5672, "dev_wer": 1.2209, "improved": false, "seconds": 266.9, "lr": 0.0010138359177406238}
+{"epoch": 15, "train_ctc_loss_per_utt": 1.1842, "dev_cer": 0.5501, "dev_wer": 1.0029, "improved": false, "seconds": 274.0, "lr": 0.0009523649069929242}
+{"epoch": 16, "train_ctc_loss_per_utt": 1.114, "dev_cer": 0.5488, "dev_wer": 1.0422, "improved": false, "seconds": 265.9, "lr": 0.000889566500953113}
+{"epoch": 17, "train_ctc_loss_per_utt": 1.0596, "dev_cer": 0.5585, "dev_wer": 1.021, "improved": false, "seconds": 954.1, "lr": 0.000825946315461758}

@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "awaaz-nano"
+version = "0.1.0"
+description = "Awaaz-Nano: a tiny from-scratch Urdu speech recognizer (1.93M-parameter CNN + Transformer encoder, CTC) trained only on the openly licensed FLEURS ur_pk corpus (CC BY 4.0), with a fully held-out, re-derivable evaluation."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Habib Ur Rehman" }]
+requires-python = ">=3.9"
+dependencies = [
+    "torch>=2.0",
+    "torchaudio>=2.0",
+    "numpy>=1.24",
+    "safetensors>=0.4",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
